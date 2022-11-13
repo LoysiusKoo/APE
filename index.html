@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaplan Hospital Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="nav-main">
+        <img src="./logo.png" alt="logo" height="60px" />
+      </div>
+    </nav>
+
+    <div class="container">
+      <form id="form" action="/">
+        <h1>Login</h1>
+        <div class="inputcontrol">
+          <label for="username"> Username </label>
+          <input id="username" name="username" type="text" required />
+          <div class="error"></div>
+        </div>
+        <div class="inputcontrol">
+          <label for="email"> Email </label>
+          <input id="email" name="email" type="text" />
+          <div class="error"></div>
+        </div>
+        <div class="inputcontrol">
+          <label for="password"> Password </label>
+          <input id="password" name="password" type="password" />
+          <div class="error"></div>
+        </div>
+        <button>Log In</button>
+      </form>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>

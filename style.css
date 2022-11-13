@@ -1,0 +1,293 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff5e4;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 10px;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  scroll-margin-top: 150px;
+}
+
+#form {
+  width: 300px;
+  margin: 15vh auto 0 auto;
+  padding: 40px;
+  background-color: #ffe3e1;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#form h1 {
+  color: black;
+  text-align: center;
+}
+
+#form button {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  background-color: #ff9494;
+  border: none;
+  border-radius: 4px;
+  font-size: large;
+}
+
+#form button:hover {
+  font-weight: bold;
+}
+
+.inputcontrol {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputcontrol input {
+  border: 2px solid white;
+  border-radius: 4px;
+  display: block;
+  font-size: 12px;
+  padding: 10px;
+  width: 100%;
+}
+
+.inputcontrol input:focus {
+  outline: 0;
+}
+
+.inputcontrol.success input {
+  border-color: green;
+}
+
+.inputcontrol.error input {
+  border-color: rgb(128, 0, 21);
+}
+
+.inputcontrol .error {
+  color: rgb(128, 0, 21);
+  font-size: 9px;
+  height: 13px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #ee6983;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.menu a {
+  color: #2d2938;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0.1rem 1rem;
+}
+
+.menu li:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.nav-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+#register {
+  background: #00ffab;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#register:hover {
+  font-weight: bold;
+}
+
+#logout {
+  background: rgb(241, 24, 24);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#logout:hover {
+  font-weight: bold;
+}
+
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+}
+
+.registration {
+  width: 400px;
+  margin: 30px 0 10px 5vh;
+  padding: 10px;
+  background-color: #ffe3e1;
+  line-height: 2em;
+  border-radius: 5px 0px 0px 5px;
+  box-shadow: 1px 1px 50px #fbc2be;
+}
+
+.registration label {
+  font-weight: bolder;
+  padding-left: 20px;
+  width: 160px;
+  float: left;
+}
+
+.registration select {
+  width: 180px;
+}
+
+#button {
+  margin-left: 250px;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid gray;
+  background-color: #ff9494;
+  border-radius: 5px;
+  font: inherit;
+}
+
+#button:hover {
+  outline: 1.5px solid gray;
+  font-weight: bold;
+}
+
+.status {
+  display: block;
+  justify-content: flex-start;
+  background-color: #ffe3e1;
+  width: 500px;
+  padding: 10px;
+  margin: 30px 5vh 10px 0;
+  border-radius: 0px 5px 5px 0px;
+  box-shadow: 1px 1px 50px #fbc2be;
+}
+
+.tdsmall {
+  display: flex;
+  margin: 20px;
+  font-size: smaller;
+}
+
+.dashboard-table {
+  background: #ffe3e1;
+  font-family: arial;
+  margin: 5%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.dashboard-table td {
+  width: 250px;
+}
+
+.counter {
+  font-family: arial;
+  padding: 5px;
+  font-size: 55px;
+  text-align: left;
+}
+
+#wlButton {
+  border: 1px solid gray;
+  background-color: #ff9494;
+  border-radius: 5px;
+  font: inherit;
+  font-size: smaller;
+  padding: 5px;
+}
+
+#wlButton:hover {
+  outline: 1.5px solid gray;
+  font-weight: bold;
+}
+
+.ward-table {
+  background-color: #d2f6ed;
+  border-style: none;
+  margin: 5%;
+}
+
+#header {
+  background-color: #beadfd;
+  border: 3px solid black;
+  border-bottom: 4px solid black;
+  letter-spacing: 4px;
+  padding: 5px;
+}
+
+.ward-table th {
+  background-color: #d5cafa;
+  border: 3px solid black;
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #2d2938;
+  padding: 5px;
+}
+
+.ward-table td {
+  width: 5000px;
+  height: 90px;
+  font-family: arial;
+  text-align: center;
+}
+
+.room {
+  margin: auto;
+  border: 3px solid black;
+  padding-top: 5px;
+  height: 120px;
+  font-family: arial;
+  text-align: center;
+}
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+#dischargeButton {
+  border: 2px solid gray;
+  background-color: #82dbd8;
+  border-radius: 5px;
+  font: inherit;
+  font-size: small;
+  padding: 5px;
+  margin: 5px;
+}
+
+#dischargeButton:hover {
+  outline: 1px solid gray;
+}
+
+html {
+  scroll-behavior: smooth;
+}
